@@ -1,0 +1,14 @@
+<%- include('partials/start') %>
+<%- include('partials/ham') %>
+<%- include('partials/header') %>
+<h1>Welcome to the Shop</h1>
+<div id="products">
+    <% products.forEach(product => { %>
+        <div class="product">
+            <h2><%= product.name %></h2>
+            <p>Price: $<%= product.price %></p>
+        </div>
+    <% }); %>
+</div>
+<%- include('partials/footer') %>
+<%- include('partials/script') %>
